@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "0c67958d-eb82-444e-a028-57358ff920aa",
+		"name": "ShipmentsInit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23407590"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1000,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"2.66\",\r\n    \"y\":\"34.2\"\r\n    }"
+				},
+				"url": {
+					"raw": "https://5r7g5fye79.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage/shipment_management",
+					"protocol": "https",
+					"host": [
+						"5r7g5fye79",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"serverless_lambda_stage",
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1001,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"1\",\r\n    \"y\":\"1\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1002,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"15\",\r\n    \"y\":\"5\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1003,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"4.9\",\r\n    \"y\":\"2.1\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1004,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"21\",\r\n    \"y\":\"34\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1005,\r\n    \"date\":\"2022/12/17\",\r\n    \"x\":\"192\",\r\n    \"y\":\"4.3\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1006,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"6.5\",\r\n    \"y\":\"3.9\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1007,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"16\",\r\n    \"y\":\"11\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1008,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"14.2\",\r\n    \"y\":\"0\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1009,\r\n    \"date\":\"2022/12/18\",\r\n    \"x\":\"2\",\r\n    \"y\":\"2\"\r\n    }"
+				},
+				"url": {
+					"raw": "{{apigetway}}/shipment_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"shipment_management"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

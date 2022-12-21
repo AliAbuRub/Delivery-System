@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "b57b7ff8-fb65-424a-88e0-4cd7666f356a",
+		"name": "CourierInit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23407590"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":1,\r\n    \"name\":\"Amer\",\r\n    \"x\":\"2\",\r\n    \"y\":\"3\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":2,\r\n    \"name\":\"Ali\",\r\n    \"x\":\"1\",\r\n    \"y\":\"1\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":3,\r\n    \"name\":\"Mansor\",\r\n    \"x\":\"4\",\r\n    \"y\":\"9\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":4,\r\n    \"name\":\"Salem\",\r\n    \"x\":\"7\",\r\n    \"y\":\"56\",\r\n    \"available\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":5,\r\n    \"name\":\"Hashim\",\r\n    \"x\":\"6.4\",\r\n    \"y\":\"100.9\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":6,\r\n    \"name\":\"Suliman\",\r\n    \"x\":\"1\",\r\n    \"y\":\"0\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":7,\r\n    \"name\":\"Shrimp\",\r\n    \"x\":\"12\",\r\n    \"y\":\"21\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":8,\r\n    \"name\":\"Iman\",\r\n    \"x\":\"87\",\r\n    \"y\":\"98\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":9,\r\n    \"name\":\"Osama\",\r\n    \"x\":\"4\",\r\n    \"y\":\"1.2\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \"ID\":10,\r\n    \"name\":\"Jirad\",\r\n    \"x\":\"13\",\r\n    \"y\":\"43\",\r\n    \"available\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apigetway}}/courier_management",
+					"host": [
+						"{{apigetway}}"
+					],
+					"path": [
+						"courier_management"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

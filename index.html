@@ -1,0 +1,564 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Delivery distribution</title>
+
+    <style>
+      body {
+        background-color: #f8d2a6;
+        font-family: "Ubuntu", sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: solid 1px rgb(0, 0, 0);
+        border-collapse: collapse;
+        padding: 2px 3px;
+        text-align: center;
+      }
+      th {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center mb-5">Delivery Distribution</h1>
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Courier Information</h2>
+      </div>
+      <div class="row justify-content-center m-2">
+        <div class="col-lg-6">
+          <form>
+            <label for="Name1" class="form-label">Courier Name:</label>
+            <input
+              type="text"
+              id="Name1"
+              class="form-control mb-4"
+              placeholder="e.g. Mohammad Mansour"
+            />
+
+            <label for="ID1" class="form-label">ID:</label>
+            <input
+              type="text"
+              id="ID1"
+              class="form-control mb-4"
+              placeholder="e.g. 201833242"
+            />
+
+            <label for="X1" class="form-label">X:</label>
+            <input
+              type="text"
+              id="X1"
+              class="form-control mb-4"
+              placeholder="e.g. 20"
+            />
+
+            <label for="Y1" class="form-label">Y:</label>
+            <input
+              type="text"
+              id="Y1"
+              class="form-control mb-4"
+              placeholder="e.g. 79"
+            />
+
+            <label for="A1" class="form-label">Available:</label>
+            <input
+              type="text"
+              id="A1"
+              class="form-control"
+              placeholder="e.g. True/False"
+            />
+
+            <div class="mb-4 text-center">
+              <pre id="demo"></pre>
+              <p id="showData"></p>
+              <button
+                onclick="SendCourierInformation()"
+                id="submit1"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Submit
+              </button>
+              <button
+                onclick="GetCourierInformation()"
+                id="get1"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Get
+              </button>
+              <button
+                onclick="DeleteCourierInformation()"
+                id="Delete1"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Delete
+              </button>
+            </div>
+
+            <div class="text-center">
+              <h2>Shipment Information</h2>
+            </div>
+
+            <label for="ID2" class="form-label">ID:</label>
+            <input
+              type="text"
+              id="ID2"
+              class="form-control mb-4"
+              placeholder="e.g. 201833242"
+            />
+
+            <label for="Date2" class="form-label">Date:</label>
+            <input
+              type="text"
+              id="Date2"
+              class="form-control mb-4"
+              placeholder="e.g. 2022/12/18"
+            />
+
+            <label for="X2" class="form-label">X:</label>
+            <input
+              type="text"
+              id="X2"
+              class="form-control mb-4"
+              placeholder="e.g. 20"
+            />
+
+            <label for="Y2" class="form-label">Y:</label>
+            <input
+              type="text"
+              id="Y2"
+              class="form-control mb-4"
+              placeholder="e.g. 79"
+            />
+
+            <div class="mb-4 text-center">
+              <pre id="demo2"></pre>
+              <p id="showData2"></p>
+              <button
+                onclick="PutShipment()"
+                id="submit2"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Submit
+              </button>
+              <button
+                onclick="GetCourierInformation()"
+                id="get2"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Get
+              </button>
+              <button
+                onclick="DeleteCourierInformation()"
+                id="Delete2"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Delete
+              </button>
+            </div>
+
+            <div class="text-center">
+              <h2>Manual Attach</h2>
+            </div>
+
+            <label for="PID3" class="form-label">PackageID:</label>
+            <input
+              type="text"
+              id="PID3"
+              class="form-control mb-4"
+              placeholder="e.g. 201"
+            />
+
+            <label for="CID3" class="form-label">CourierID:</label>
+            <input
+              type="text"
+              id="CID3"
+              class="form-control mb-4"
+              placeholder="e.g. 201"
+            />
+
+            <label for="Date3" class="form-label">Date:</label>
+            <input
+              type="text"
+              id="Date3"
+              class="form-control mb-4"
+              placeholder="e.g. 2022/12/18"
+            />
+
+            <label for="X3" class="form-label">X:</label>
+            <input
+              type="text"
+              id="X3"
+              class="form-control mb-4"
+              placeholder="e.g. 20"
+            />
+
+            <label for="Y3" class="form-label">Y:</label>
+            <input
+              type="text"
+              id="Y3"
+              class="form-control mb-4"
+              placeholder="e.g. 79"
+            />
+
+            <div class="mb-4 text-center">
+              <pre id="demo3"></pre>
+              <p id="showData3"></p>
+              <button
+                onclick="PutManualAttach()"
+                id="submit3"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Submit
+              </button>
+              <button
+                onclick="GetCourierInformation()"
+                id="get3"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Get
+              </button>
+              <button
+                onclick="SendEmail()"
+                id="email"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Email
+              </button>
+              <button
+                onclick="Generate()"
+                id="generate"
+                type="button"
+                class="btn btn-secondary my-3"
+              >
+                Generate results
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var url1 = "https://ipbw7odkt1.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage"
+      function SendCourierInformation() {
+        var name = document.getElementById("Name1").value;
+        var IDs = parseInt(document.getElementById("ID1").value);
+        var X = document.getElementById("X1").value;
+        var Y = document.getElementById("Y1").value;
+        var A = document.getElementById("A1").value;
+
+        // Creating a XHR object
+        let xhr = new XMLHttpRequest();
+        let url = url1 + "/courier_management";
+
+        // open a connection
+        xhr.open("POST", url, false);
+
+        // Set the request header i.e. which type of content you are sending
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Create a state change callback
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Print received data from server
+            var json = JSON.parse(xhr.responseText);
+            document.getElementById("demo").innerText = json;
+          }
+        };
+
+        // Converting JSON data to string
+        var data = JSON.stringify({
+          ID: IDs,
+          name: name,
+          x: X,
+          y: Y,
+          available: A,
+        });
+
+        // Sending data with the request
+        xhr.send(data);
+      }
+
+      function GetCourierInformation() {
+        let xhr = new XMLHttpRequest();
+        var s = event.target.id;
+        if (s == "get1") {
+          urla = "courier_management";
+        } else if (s == "get2") {
+          urla = "shipment_management";
+        } else {
+          urla = "manual_attach";
+        }
+        let url = url1 + "/" + urla;
+
+        // open a connection
+        xhr.open("GET", url, false);
+
+        // Set the request header i.e. which type of content you are sending
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Create a state change callback
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var json = this.responseText;
+
+            json = json.replace(/[()]/g, "");
+            json = json.replace(/Decimal/g, "");
+            json = json.replace(/'/g, '"');
+            json = json.slice(1, -1);
+            json = JSON.parse(json);
+            // Print received data from server
+            console.log(typeof json);
+
+            let col = [];
+            for (let i = 0; i < json.length; i++) {
+              for (let key in json[i]) {
+                if (col.indexOf(key) === -1) {
+                  col.push(key);
+                }
+              }
+            }
+            const table = document.createElement("table");
+            let tr = table.insertRow(-1);
+
+            for (let i = 0; i < col.length; i++) {
+              let th = document.createElement("th"); // table header.
+              th.innerHTML = col[i];
+              tr.appendChild(th);
+            }
+
+            for (let i = 0; i < json.length; i++) {
+              tr = table.insertRow(-1);
+
+              for (let j = 0; j < col.length; j++) {
+                let tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = json[i][col[j]];
+              }
+            }
+            if (s == "get1") {
+              var paste = "showData";
+            } else if (s == "get2") {
+              var paste = "showData2";
+            } else {
+              var paste = "showData3";
+            }
+            const divShowData = document.getElementById(paste);
+            divShowData.innerHTML = "";
+            divShowData.appendChild(table);
+          }
+        };
+        // Converting JSON data to string
+        // Sending data with the request
+        xhr.send();
+      }
+
+      function DeleteCourierInformation() {
+        var s = event.target.id;
+        if (s == "Delete1") {
+          var IDs = parseInt(document.getElementById("ID1").value);
+        } else {
+          var IDs = parseInt(document.getElementById("ID2").value);
+        }
+
+        // Creating a XHR object
+        let xhr = new XMLHttpRequest();
+        var s = event.target.id;
+
+        if (s == "Delete1") {
+          urla = "courier_management";
+        } else {
+          urla = "shipment_management";
+        }
+        let url = url1 + "/" +urla;
+
+        // open a connection
+        xhr.open("DELETE", url, false);
+
+        // Set the request header i.e. which type of content you are sending
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Create a state change callback
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Print received data from server
+            var json = JSON.parse(xhr.responseText);
+            if (s == "Delete1") {
+              var paste = "demo";
+            } else {
+              var paste = "demo2";
+            }
+            document.getElementById(paste).innerText = json;
+          }
+        };
+
+        // Converting JSON data to string
+        var data = JSON.stringify({
+          ID: IDs,
+        });
+
+        // Sending data with the request
+        xhr.send(data);
+      }
+
+      function PutShipment() {
+        var date = document.getElementById("Date2").value;
+        var IDs = parseInt(document.getElementById("ID2").value);
+        var X = document.getElementById("X2").value;
+        var Y = document.getElementById("Y2").value;
+        // Creating a XHR object
+        let xhr = new XMLHttpRequest();
+        let url = url1 + "/shipment_management";
+
+        // open a connection
+        xhr.open("POST", url, false);
+
+        // Set the request header i.e. which type of content you are sending
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Create a state change callback
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Print received data from server
+            var json = JSON.parse(xhr.responseText);
+            document.getElementById("demo2").innerText = json;
+          }
+        };
+
+        // Converting JSON data to string
+        var data = JSON.stringify({
+          ID: IDs,
+          date: date,
+          x: X,
+          y: Y,
+        });
+
+        xhr.send(data);
+      }
+
+      function PutManualAttach() {
+        var CIDs = parseInt(document.getElementById("CID3").value);
+        var PIDs = parseInt(document.getElementById("PID3").value);
+        var X = document.getElementById("X3").value;
+        var Y = document.getElementById("Y3").value;
+        var date = document.getElementById("Date3").value;
+
+        // Creating a XHR object
+        let xhr = new XMLHttpRequest();
+        let url = url1 + "/manual_attach";
+
+        // open a connection
+        xhr.open("POST", url, false);
+
+        // Set the request header i.e. which type of content you are sending
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Create a state change callback
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Print received data from server
+            var json = JSON.parse(xhr.responseText);
+            document.getElementById("demo3").innerText = json;
+          }
+        };
+
+        // Converting JSON data to string
+        var data = JSON.stringify({
+          PackageID: PIDs,
+          CourierID: CIDs,
+          date: date,
+          x: X,
+          y: Y,
+        });
+
+        // Sending data with the request
+        xhr.send(data);
+      }
+
+      function SendEmail() {
+        // Creating a XHR object
+        let xhr = new XMLHttpRequest();
+        let url = url1 + "/email_notification";
+
+        // open a connection
+        xhr.open("GET", url, false);
+
+        // Set the request header i.e. which type of content you are sending
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Create a state change callback
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Print received data from server
+            var json = JSON.parse(xhr.responseText);
+            document.getElementById("demo3").innerText = json;
+          }
+        };
+
+        // Converting JSON data to string
+        var data = JSON.stringify({
+          send: "TRUE",
+        });
+        xhr.send();
+      }
+      function Generate() {
+        // Creating a XHR object
+
+        let xhr = new XMLHttpRequest();
+
+        var date = document.getElementById("Date3").value;
+
+        let url = "http://54.90.63.184/assign";
+
+        // open a connection
+
+        xhr.open("POST", url, false);
+
+        // Set the request header i.e. which type of content you are sending
+
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        // Create a state change callback
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Print received data from server
+
+  
+          }
+        };
+
+        var data = JSON.stringify({
+          date: date,
+        });
+
+        xhr.send(data);
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
